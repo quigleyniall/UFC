@@ -1,34 +1,36 @@
- body {
-
-  background-size: 100%;
-  background-repeat: no-repeat;
-  position: relative;
-
+ * {
+   box-sizing: border-box;
+ }
+ /*applying position to container for future positioning of search bar*/
+ .container {
+   position: relative;
+ }
+#myImage{
+  width: 100%;
+  height: auto;
 }
-header p{
-  font-size: 50px;
-  position: absolute;
-  top:20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-
+/*positioning div in relation to image*/
 .locate{
-  position: fixed;
+  position: absolute;
+  display: block;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/*setting search bar horizontally*/
+.locate input {
+  outline: none;
+  display: inline-block;
+}
 #iname{
-  padding: 20px;
-  width: 400px;
+  padding: 15px 20px;
+  width: 350px;
   border-radius: 10px;
+  margin-right: 10px;
 }
 #submit{
   background-color: #4CAF50;
-  padding: 20px 15px;
-  margin-left: 10px;
+  padding: 15px 20px;
   border-radius: 10px;
   color: white;
 }
@@ -37,7 +39,91 @@ header p{
   background-color: #357a38
 }
 label{
-  display: block;
   color: white;
   font-size: 30px;
+  display:block;
 }
+
+#error {
+  color: white;
+  font-size: 20px;
+}
+ #output{
+   color: black;
+   margin-left: auto;
+   margin-right: auto;
+ }
+#output th{
+  height: auto;
+  width: auto;
+}
+#output td{
+  width: 20%;
+  border:1px solid white;
+  height: 50px;
+  font-size: 30px;
+}
+#full{
+  text-decoration: underline;
+}
+/*reducing width of search bar to keep inline-block*/
+@media screen and (max-width: 1400px){
+  #iname{
+    width: 400px;
+  }
+}
+ @media screen and (max-width: 1050px){
+   #iname{
+     width: 350px;
+   }
+ }
+ @media screen and (max-width: 950px){
+   #iname{
+     width: 300px;
+   }
+ }
+ /*changing inline block to block and changing style of buttons*/
+@media screen and (max-width:850px) {
+  #submit {
+    padding: 5px 5px;
+    width: 200px;
+  }
+  #iname{
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .locate input{
+    display:block;
+  }
+}
+/*moving search bar off the image*/
+ @media screen and (max-width: 700px){
+      .locate {
+        position: relative;
+        margin-top: 90px;
+      }
+   .locate input{
+     display: block;
+   }
+   label{
+     color: black;
+     display: block
+   }
+   #error{
+     color: black;
+   }
+   #output {
+     margin-top: -140px;
+   }
+ }
+ /*reducing size of font*/
+ @media screen and (max-width: 500px){
+   label{
+     font-size: 20px;
+   }
+   #error{
+     font-size: 20px;
+   }
+
+ }

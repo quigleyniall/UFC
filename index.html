@@ -4,20 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>UFC Records</title>
   <script src="jquery-3.3.1.min.js"></script>
   <link rel = "stylesheet" href = "ufc.css">
   <script src = "ufc.js" ></script>
 
 </head>
 <body>
-  <header>
-    <p>UFC</p>
-  </header>
+<div class="container">
+  <img id="myImage" src="UFC3.jpg"/>
   <div class = "locate">
-    <label>Search Fighters Ranking</label>
-  <input type = "text" name="searchterm" id = "iname"/>
+    <label>Search Fighters Records</label>
+  <input type = "text" title="input1" id = "iname" value="Conor McGregor"/>
   <input type = "submit" id = "submit" value = "search"/>
+    <p id="error">No match Found! Make sure names are capitalised</p>
 </div>
+</div>
+  <!--<p id="image"></p>-->
+  <div class="outputcontainer">
+  <table id = "output">
+    <th colspan="2">
+      <img src="" id="image">
+          </th>
+    <tr></tr>
+<td colspan="2"id="full"></td>
+    </tr>
+  <tr>
+    <td>Wins: </td>
+    <td id="wins"></td>
+  </tr>
+  <tr>
+    <td>Losses: </td>
+    <td id="losses"></td>
+  </tr>
+  <tr>
+    <td>Draws: </td>
+    <td id="draw"></td>
+  </tr>
+  <tr>
+    <td>Weight Class:</td>
+    <td id="weight"></td>
+  </tr>
+  <tr>
+    <td>Status:</td>
+    <td id="status"></td>
+  </tr>
+
+</table>
+</div>
+
 </body>
 </html>
