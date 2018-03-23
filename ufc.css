@@ -1,0 +1,43 @@
+ body {
+
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+
+}
+header p{
+  font-size: 50px;
+  position: absolute;
+  top:20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.locate{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#iname{
+  padding: 20px;
+  width: 400px;
+  border-radius: 10px;
+}
+#submit{
+  background-color: #4CAF50;
+  padding: 20px 15px;
+  margin-left: 10px;
+  border-radius: 10px;
+  color: white;
+}
+#submit:hover {
+  box-shadow: 2px 2px 0 #357a38;
+  background-color: #357a38
+}
+label{
+  display: block;
+  color: white;
+  font-size: 30px;
+}
