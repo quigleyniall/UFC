@@ -36,7 +36,8 @@ var x = $('#iname').val()
 // Called automatically with the response of the YouTube API request.
 function onSearchResponse(response) {
     showResponse(response);
-      str = (response.items[0].id.videoId);
+    var i = Math.floor((Math.random()*5));
+      str = (response.items[i].id.videoId);
       console.log(str);
       // player.loadVideoById(str)
        document.getElementById("player").src = "https://www.youtube.com/embed/"+str;
