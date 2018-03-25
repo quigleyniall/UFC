@@ -71,51 +71,51 @@ $.ajax({
 //load fighter highlight videos to modal1
 $('#vid0').click(function(){
   modal1.style.display = 'block';
-   document.getElementById("player").src = 'http://www.youtube.com/embed/bx5bN0U2MP4'
+   document.getElementById("player").src = 'https://www.youtube.com/embed/bx5bN0U2MP4'
 })
 $('#vid1').click(function(){
   modal1.style.display = 'block';
-  document.getElementById("player").src = 'http://www.youtube.com/embed/m9MyAXQJpDc'
+  document.getElementById("player").src = 'https://www.youtube.com/embed/m9MyAXQJpDc'
 })
 $('#vid2').click(function(){
   modal1.style.display = 'block';
-  document.getElementById("player").src = 'http://www.youtube.com/embed/MpM9gOnCZKk'
+  document.getElementById("player").src = 'https://www.youtube.com/embed/MpM9gOnCZKk'
 })
 $('#vid3').click(function(){
   modal1.style.display = 'block';
-  document.getElementById("player").src = 'http://www.youtube.com/embed/Q7G8qR8lQWs'
+  document.getElementById("player").src = 'https://www.youtube.com/embed/Q7G8qR8lQWs'
 })
 $('#vid4').click(function(){
   modal1.style.display = 'block';
-  document.getElementById("player").src = 'http://www.youtube.com/embed/3hh6Nc9bEfE'
+  document.getElementById("player").src = 'https://www.youtube.com/embed/3hh6Nc9bEfE'
 })
 $('#vid5').click(function(){
   modal1.style.display = 'block';
-  document.getElementById("player").src = 'http://www.youtube.com/embed/beg6-Ul6y4E'
+  document.getElementById("player").src = 'https://www.youtube.com/embed/beg6-Ul6y4E'
 })
 $('#vid6').click(function(){
   modal1.style.display = 'block';
-  document.getElementById("player").src = 'http://www.youtube.com/embed/UPts_Qf5HYw'
+  document.getElementById("player").src = 'https://www.youtube.com/embed/UPts_Qf5HYw'
 })
 $('#vid7').click(function(){
   modal1.style.display = 'block';
-  document.getElementById("player").src = 'http://www.youtube.com/embed/M0MnVUHsrVg'
+  document.getElementById("player").src = 'https://www.youtube.com/embed/M0MnVUHsrVg'
 })
 $('#vid8').click(function(){
   modal1.style.display = 'block';
-  document.getElementById("player").src = 'http://www.youtube.com/embed/Bukv6v5LJpo'
+  document.getElementById("player").src = 'https://www.youtube.com/embed/Bukv6v5LJpo'
 })
 $('#vid9').click(function(){
   modal1.style.display = 'block';
-  document.getElementById("player").src = 'http://www.youtube.com/embed/tTpVWh3sL6Y'
+  document.getElementById("player").src = 'https://www.youtube.com/embed/tTpVWh3sL6Y'
 })
 $('#vid10').click(function(){
   modal1.style.display = 'block';
-  document.getElementById("player").src = 'http://www.youtube.com/embed/C2arXMHfV6E'
+  document.getElementById("player").src = 'https://www.youtube.com/embed/C2arXMHfV6E'
 })
 $('#vid11').click(function(){
   modal1.style.display = 'block';
-  document.getElementById("player").src = 'http://www.youtube.com/embed/oo43aQobGZg'
+  document.getElementById("player").src = 'https://www.youtube.com/embed/oo43aQobGZg'
 })
 
 span1.onclick = function() {
