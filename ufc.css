@@ -76,6 +76,8 @@ label{
    color: black;
    margin-left: auto;
    margin-right: auto;
+   height :80%;
+   width: 50%;
    font-family: monospace;
  }
 #output th{
@@ -84,8 +86,7 @@ label{
 }
 #output td{
   width: 20%;
-  height: 50px;
-  font-size: 30px;
+  font-size: 20px;
 }
 #full{
   text-decoration: underline;
@@ -128,6 +129,7 @@ label{
     height: 100%;
     overflow: auto;
 }
+
 
 /* The Close Button */
 .close, .close1 {
