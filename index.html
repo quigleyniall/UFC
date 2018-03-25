@@ -5,24 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>UFC Records</title>
+  <script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script>
+  <script src="youtube.js"></script>
+  <script src="YTplayer.js"></script>
   <script src="jquery-3.3.1.min.js"></script>
   <link rel = "stylesheet" href = "ufc.css">
   <script src = "ufc.js" ></script>
-
 </head>
 <body>
+  <nav>
+  <ul>
+    <li><a id="ufc"href="#top">UFC World Champions</a></li>
+  </ul>
+</nav>
 <div class="container">
   <img id="myImage" src="UFC3.jpg"/>
   <div class = "locate">
     <label>Search Fighters Records</label>
   <input type = "text" title="input1" id = "iname" value="Conor McGregor"/>
+  <!-- submit runs ajax call and opens modal window with result -->
   <input type = "submit" id = "submit" value = "search"/>
-    <p id="error">No match Found! Make sure names are capitalised</p>
+    <p id="error">No match Found! Make first letter of names are capitalised</p>
 </div>
 </div>
-  <!--<p id="image"></p>-->
-  <div class="outputcontainer">
-  <table id = "output">
+<!-- top 10 -->
+<div id="completeufc">
+<p id="top" class="heading">UFC World Champions</p>
+<div id="top0"><button id='vid0'>Watch Highlights</button></div>
+<div id="top1"><button id='vid1'>Watch Highlights</button></div>
+<div id="top2"><button id='vid2'>Watch Highlights</button></div>
+<div id="top3"><button id='vid3'>Watch Highlights</button></div>
+<div id="top4"><button id='vid4'>Watch Highlights</button></div>
+<div id="top5"><button id='vid5'>Watch Highlights</button></div>
+<div id="top6"><button id='vid6'>Watch Highlights</button></div>
+<div id="top7"><button id='vid7'>Watch Highlights</button></div>
+<div id="top8"><button id='vid8'>Watch Highlights</button></div>
+<div id="top9"><button id='vid9'>Watch Highlights</button></div>
+<div id="top10"><button id='vid10'>Watch Highlights</button></div>
+<div id="top11"><button id='vid11'>Watch Highlights</button></div>
+<a href="#ufc"><button id="backtosearch">Back to search</button></a>
+</div>
+
+
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <table id = "output">
     <th colspan="2">
       <img src="" id="image">
           </th>
@@ -32,6 +66,7 @@
   <tr>
     <td>Wins: </td>
     <td id="wins"></td>
+    <td><button id="myBtn">Watch Highlights</button></td>
   </tr>
   <tr>
     <td>Losses: </td>
@@ -49,9 +84,23 @@
     <td>Status:</td>
     <td id="status"></td>
   </tr>
-
 </table>
 </div>
+</div>
+</div>
 
+
+
+<!-- The Modal -->
+<div id="myModal1" class="modal1">
+
+  <!-- Modal content -->
+  <div class="modal-content1">
+    <span class="close1">&times;</span>
+    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+        <div id="player"></div>
+  </div>
+</div>
+<pre id="response"></pre>
 </body>
 </html>
