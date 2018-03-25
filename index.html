@@ -7,7 +7,7 @@
   <title>UFC Records</title>
   <script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script>
   <script src="youtube.js"></script>
-  <script src="YTplayer.js"></script>
+  <!-- <script src="YTplayer.js"></script> -->
   <script src="jquery-3.3.1.min.js"></script>
   <link rel = "stylesheet" href = "ufc.css">
   <script src = "ufc.js" ></script>
@@ -100,9 +100,14 @@
   <div class="modal-content1">
     <span class="close1">&times;</span>
     <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-        <div id="player"></div>
+        <!-- <div id="player"></div> -->
+        <iframe id="player" class="youtube-player" type="text/html" width="640" height="385"
+        src="http://www.youtube.com/embed/bx5bN0U2MP4" frameborder="0">
+        </iframe>        
   </div>
 </div>
 <pre id="response"></pre>
+
+</div>
 </body>
 </html>

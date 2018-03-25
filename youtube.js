@@ -38,5 +38,6 @@ function onSearchResponse(response) {
     showResponse(response);
       str = (response.items[0].id.videoId);
       console.log(str);
-       player.loadVideoById(str);
+      // player.loadVideoById(str)
+       document.getElementById("player").src = "http://www.youtube.com/embed/"+str;
     }

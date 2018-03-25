@@ -71,60 +71,60 @@ $.ajax({
 //load fighter highlight videos to modal1
 $('#vid0').click(function(){
   modal1.style.display = 'block';
-  player.loadVideoById('bx5bN0U2MP4')
+   document.getElementById("player").src = 'http://www.youtube.com/embed/bx5bN0U2MP4'
 })
 $('#vid1').click(function(){
   modal1.style.display = 'block';
-  player.loadVideoById('m9MyAXQJpDc')
+  document.getElementById("player").src = 'http://www.youtube.com/embed/m9MyAXQJpDc'
 })
 $('#vid2').click(function(){
   modal1.style.display = 'block';
-  player.loadVideoById('MpM9gOnCZKk')
+  document.getElementById("player").src = 'http://www.youtube.com/embed/MpM9gOnCZKk'
 })
 $('#vid3').click(function(){
   modal1.style.display = 'block';
-  player.loadVideoById('Q7G8qR8lQWs')
+  document.getElementById("player").src = 'http://www.youtube.com/embed/Q7G8qR8lQWs'
 })
 $('#vid4').click(function(){
   modal1.style.display = 'block';
-  player.loadVideoById('3hh6Nc9bEfE')
+  document.getElementById("player").src = 'http://www.youtube.com/embed/3hh6Nc9bEfE'
 })
 $('#vid5').click(function(){
   modal1.style.display = 'block';
-  player.loadVideoById('beg6-Ul6y4E')
+  document.getElementById("player").src = 'http://www.youtube.com/embed/beg6-Ul6y4E'
 })
 $('#vid6').click(function(){
   modal1.style.display = 'block';
-  player.loadVideoById('UPts_Qf5HYw')
+  document.getElementById("player").src = 'http://www.youtube.com/embed/UPts_Qf5HYw'
 })
 $('#vid7').click(function(){
   modal1.style.display = 'block';
-  player.loadVideoById('M0MnVUHsrVg')
+  document.getElementById("player").src = 'http://www.youtube.com/embed/M0MnVUHsrVg'
 })
 $('#vid8').click(function(){
   modal1.style.display = 'block';
-  player.loadVideoById('Bukv6v5LJpo')
+  document.getElementById("player").src = 'http://www.youtube.com/embed/Bukv6v5LJpo'
 })
 $('#vid9').click(function(){
   modal1.style.display = 'block';
-  player.loadVideoById('tTpVWh3sL6Y')
+  document.getElementById("player").src = 'http://www.youtube.com/embed/tTpVWh3sL6Y'
 })
 $('#vid10').click(function(){
   modal1.style.display = 'block';
-  player.loadVideoById('C2arXMHfV6E')
+  document.getElementById("player").src = 'http://www.youtube.com/embed/C2arXMHfV6E'
 })
 $('#vid11').click(function(){
   modal1.style.display = 'block';
-  player.loadVideoById('oo43aQobGZg')
+  document.getElementById("player").src = 'http://www.youtube.com/embed/oo43aQobGZg'
 })
 
 span1.onclick = function() {
-  player.stopVideo();
+  // player.stopVideo();
     modal1.style.display = "none";
 }
 window.onclick = function(event) {
     if (event.target == modal1) {
-      player.stopVideo();
+      // player.stopVideo();
         modal1.style.display = "none";
     }
 }
@@ -159,7 +159,7 @@ $("#submit").click(function(){
                           document.getElementById('image').src = data[i].thumbnail;
                          document.getElementById('full').innerHTML = (data[i].first_name + " " + data[i].last_name);
                       }
-
+                      document.getElementById('player').src='';
                       // When the user clicks the button, open the modal
                       modal.style.display = "block";
                       // When the user clicks on <span> (x), close the modal
@@ -175,13 +175,16 @@ $("#submit").click(function(){
                       }
                       // When the user clicks on <span> (x), close the modal and stop the video
                       span1.onclick = function() {
-                        player.stopVideo()
+                        // player.stopVideo()
+                        document.getElementById('player').src='';
                           modal1.style.display = "none";
+
                       }
                       // When the user clicks anywhere outside of the modal, close it
                       window.onclick = function(event) {
                           if (event.target == modal1) {
-                            player.stopVideo()
+                            // player.stopVideo()
+                          document.getElementById('player').src='';
                               modal1.style.display = "none";
                           }
                       }

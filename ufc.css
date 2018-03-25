@@ -112,13 +112,13 @@ label{
     left: 0;
     top: 0;
     margin: auto;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    margin-left: 2.5%;
+    width: 95%; /* Full width */
+    height: 95%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-
 /* Modal Content */
 .modal-content, .modal-content1 {
     background-color: #fefefe;
@@ -129,8 +129,6 @@ label{
     height: 100%;
     overflow: auto;
 }
-
-
 /* The Close Button */
 .close, .close1 {
     color: #aaaaaa;
@@ -157,7 +155,6 @@ label{
   background-color: #4CAF50;
   margin-top: 40px;
 }
-
 #player {
     position: absolute;
     top: 5%;
@@ -173,7 +170,6 @@ button{
 button:hover{
   box-shadow: 2px 2px 0px #f1f1f1;
 }
-
 /*reducing width of search bar to keep inline-block*/
 @media screen and (max-width: 1400px){
   #iname{
@@ -231,8 +227,6 @@ button:hover{
        width: 70%;
        height: 70%;
    }
-
-
  }
  /*reducing size of font*/
  @media screen and (max-width: 500px){
@@ -242,7 +236,6 @@ button:hover{
    #error{
      font-size: 20px;
    }
-
  }
 @media screen and (max-width: 900px){
   #top0,#top1,#top2,#top3,#top4,#top5,#top6,#top7,#top8,#top9,#top10,#top11{
